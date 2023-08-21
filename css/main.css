@@ -1,0 +1,792 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+.layout {
+    width: 98%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.layout .tools {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.layout .tools ul {
+    list-style-type: none;
+}
+
+.layout .tools ul li {
+    float: right;
+    padding: 8px;
+    color: #626262;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 2px;
+    transition: 0.8s;
+
+}
+
+.layout .tools ul li:hover {
+
+    cursor: pointer;
+    color: #ed893d;
+
+}
+
+.layout .tools ul li.sign {
+    color: #b9300e;
+}
+
+.layout .tools ul li.item {
+    color: rgb(230, 71, 9);
+}
+
+.layout .slogan {
+    margin: 0px 10px;
+    width: 25%;
+    align-items: center;
+    text-align: center;
+}
+
+.layout .slogan a {
+    color: #505050;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+
+}
+
+.layout .slogan a span {
+    color: #ed893d;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.layout .slogan a:hover {
+    cursor: pointer;
+}
+.layout .toggler{
+    display: none;
+}
+
+.container {
+    width: 95%;
+    height: 100vh;
+    position: absolute;
+    margin: 0px auto;
+}
+
+.container .page1 {
+    text-align: center;
+    align-items: center;
+    background-image: url(../img/hero-bg.png) center bottom no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 110px;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+.container .page1 h2 {
+
+    color: #ed893d;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55px;
+    /* font-family: "Philosopher", sans-serif; */
+    margin: 0 0 10px 0;
+
+}
+
+.container .page1 h3 {
+    color: #777;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 30px;
+
+}
+
+.container .page1 img {
+    margin-bottom: 40px;
+}
+
+.container .page1 a {
+
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    border: 2px solid #ed893d;
+    border-radius: 50px;
+    color: #ed893d;
+    transition: 0.5s;
+    padding: 11px 36px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.container .page1 .apps {
+    align-items: center;
+}
+
+.container .page1 .apps a {
+    font-size: 11px;
+    border: none;
+    color: #555;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 3px -2px;
+    transition: 0.4s;
+}
+
+.container .page1 .apps a i {
+    margin: 6px 11px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.container .page1 .apps a:hover {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* End Page One  */
+
+
+
+/* =========================================================================== */
+
+
+
+
+/* Start Page Two  */
+
+.container .page2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    margin: 0px auto;
+    text-align: center;
+}
+
+
+.container .page2 h4 {
+    width: 60%;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+    margin: 30px 0px;
+    letter-spacing: 1px;
+
+}
+
+.container .page2 .row {
+    width: 80%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+
+
+}
+
+.container .page2 .row .vision {
+    width: 40%;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    margin: 0px 10px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    transition: 0.6s;
+
+}
+
+.container .page2 .row .vision:hover {
+    cursor: pointer;
+    border: 2px solid #dbd6d6;
+    box-shadow: #fff;
+}
+
+.container .page2 .row .vision img {
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.container .page2 .row .vision h5 {
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.container .page2 .row .vision p {
+    color: #505050;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+
+}
+
+.container .page2 .row .mission {
+    width: 40%;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    margin: 0px 10px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    transition: 0.6s;
+}
+
+.container .page2 .row .mission:hover {
+    cursor: pointer;
+    border: 2px solid #dbd6d6;
+    box-shadow: #fff;
+}
+
+.container .page2 .row .mission img {
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.container .page2 .row .mission h5 {
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.container .page2 .row .mission p {
+    color: #505050;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+
+}
+
+/* End Page Two  */
+
+
+
+/* =========================================================================== */
+
+
+
+
+/* Start Page Three  */
+
+.container .page3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+
+.container .page3 h6 {
+    width: 60%;
+    font-family: "Roboto", sans-serif;
+    font-size: 42px;
+    font-weight: 100;
+    margin: 50px 0px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.container .page3 .row {
+    width: 80%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+
+}
+
+.container .page3 .row .service {
+    width: 28%;
+    display: inline-grid;
+    text-align: center;
+    align-items: center;
+    padding: 20px 0px;
+    margin: 20px 10px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: 0.6s;
+
+}
+
+.container .page3 .row .service:hover {
+    cursor: pointer;
+    border: 2px solid #dbd6d6;
+    box-shadow: #fff;
+}
+
+
+.container .page3 .row .service img {
+    width: 20%;
+    margin-bottom: 25px;
+    text-align: center;
+    margin: 35px auto;
+}
+
+.container .page3 .row .service h7 {
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container .page3 .row .service2 {
+    width: 45%;
+    text-align: center;
+    align-items: center;
+    display: inline-grid;
+    padding: 20px 0px;
+    margin: 10px 0px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+.container .page3 .row .service2:hover {
+    cursor: pointer;
+    border: 2px solid #dbd6d6;
+    box-shadow: #fff;
+}
+
+.container .page3 .row .service2 img {
+    width: 20%;
+    margin-bottom: 25px;
+    text-align: center;
+    margin: 35px auto;
+}
+
+.container .page3 .row .service2 h7 {
+    color: black;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ============================================================= */
+
+/* Start Page 4 */
+
+/* ============================================================= */
+.container .page4 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    margin: 0px auto;
+}
+
+.container .page4 h4 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.container .page4 .container2 {
+    width: 90%;
+    /* height: 380px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .page4 .container2 .cards {
+    width: 30%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+}
+
+.container .page4 .container2 .cards:hover {
+    animation-name: shack;
+    animation-duration: 0.8s;
+    box-shadow: 3px 7px 19px 0px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.194);
+}
+
+.container .page4 .container2 .cards i {
+    font-size: 50px;
+}
+
+.container .page4 .container2 .cards h5 {
+    font-size: 15px;
+}
+
+/* ============================================================= */
+
+/* Start Page 5 */
+
+/* ============================================================= */
+.container .page5 {
+    padding-top: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.container .page5 h2 {
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.container .page5 .content {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #ffffffae;
+    margin-top: 20px;
+}
+
+.container .page5 .content .info {
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff63;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .page5 .content .info .infocard {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-left: 20px;
+    width: 50%;
+    font-size: larger;
+}
+
+.container .page5 .content .info .infocard i {
+    width: 30px;
+    margin-right: 30px;
+}
+
+.container .page5 .content .info .infocard iframe {
+    width: 200%;
+    height: 34vh;
+}
+
+.container .page5 .content .form {
+    width: 50%;
+    height: 90%;
+    border-left: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.container .page5 .content form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.container .page5 .content form input {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.157);
+    border-radius: 10px;
+}
+
+.container .page5 .content form input:focus {
+    outline: none;
+    transition-duration: 0.9s;
+    box-shadow: 3px 7px 19px 0px rgba(0, 0, 0, 0.5);
+    border: 2px solid #ed893da9;
+}
+
+.container .page5 .content .btn {
+    background: #ed893d;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: all 0.8s;
+}
+
+.container .page5 .content .btn:hover {
+    animation-name: shack;
+    animation-duration: 0.8s;
+    box-shadow: 3px 7px 19px 0px rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--main);
+    border-radius: 10px;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.container .page5 .content .form {
+    width: 50%;
+    height: 90%;
+    border-left: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container .end {
+    text-align: center;
+    margin: 60px auto;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    /* border-top: 4px solid #555; */
+
+}
+
+.container .end a {
+    color: #ed893d;
+    text-decoration: none;
+
+}
+
+
+
+/* ============================================================================== */
+
+/* Media Query */
+
+/* ============================================================================== */
+
+
+
+@media (max-width:601px) {
+    .layout {
+        padding: 20px;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .layout .tools {
+        display: none;
+    }
+
+    .layout .slogan {
+        width: 35%;
+
+    }
+    .layout .toggler{
+        width: 20%;
+        display: block;
+    }
+
+    .container {
+        width: 95%;
+        position: absolute;
+        margin-top: 0px;
+    }
+
+    .container .page1 {
+
+        padding-top: 110px;
+        flex-direction: column;
+        margin: auto;
+        align-items: normal;
+
+    }
+
+    .container .page1 h2 {
+        font-size: 30px;
+    }
+
+    .container .page1 h3 {
+        font-size: 14px;
+
+    }
+
+    .container .page1 img {
+        margin-bottom: 40px;
+    }
+
+    .container .page1 a {
+        width: 120px;
+        margin: 0px auto;
+    }
+
+    .container .page2 h4 {
+        font-size: 15px;
+
+    }
+
+    .container .page2 .row {
+        margin: 15px 0px 40px 0px
+    }
+
+    .container .page2 .row .vision {
+        width: 100%;
+    }
+
+
+    .container .page2 .row .mission {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+    .container .page3 h6 {
+
+        font-size: 27px;
+
+    }
+
+
+
+    .container .page3 .row .service {
+        width: 85%;
+        padding: 4px 0px;
+        margin: 4px 4px;
+
+
+    }
+
+
+    .container .page3 .row .service2 {
+        width: 85%;
+        padding: 4px 0px;
+        margin: 4px 4px;
+    }
+
+    .container .page4 {
+
+        padding: 40px 0px;
+        margin: 0px auto;
+
+    }
+
+    .container .page4 h4 {
+        font-size: 32px;
+    }
+
+
+    .container .page4 .container2 .cards {
+        width: 80%;
+        height: 150px;
+
+    }
+
+
+    .container .page5 {
+        width: 100%;
+        padding-top: 50px;
+        margin: 0px auto !important;
+    }
+
+    .container .page5 h2 {
+        font-size: 35px;
+    }
+
+    .container .page5 .content {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .container .page5 .content .info {
+        width: 80%;
+
+    }
+
+    .container .page5 .content .info .infocard {
+        display: flex;
+        flex-direction: row;
+        margin-top: 25px;
+        margin-left: 20px;
+        width: 50%;
+        font-size: larger;
+    }
+
+    .container .page5 .content .info .infocard i {
+        width: 30px;
+        margin-right: 30px;
+    }
+
+    .container .page5 .content .info .infocard iframe {
+        width: 200%;
+        height: 34vh;
+    }
+
+    .container .page5 .content .form {
+        width: 90%;
+
+        border-left: none;
+        padding: 0px;
+    }
+
+    .container .end {
+
+        width: 75%;
+
+    }
+
+
+}
